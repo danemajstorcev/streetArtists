@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project02</title>
+    <link rel="stylesheet" href="./style/artist-item-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main-content">
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <button class="confirm">Confirm</button>
+          <button class="close">Cancel</button>
+        </div>
+      </div>
+      <div class="header-section">
+        <div class="logo-and-header">
+          <a href="./index.html"><img src="./img/Logo.png" alt="logo" /></a>
+          <h1 id="artist-name"></h1>
+        </div>
+        <div id="menu-toggle"><img src="./img/hamburger.png" alt="" /></div>
+      </div>
+      <div class="li-menu">
+        <ul>
+          <li><a id="home">Home</a></li>
+          <li><a id="items">Items</a></li>
+          <li><a id="auction">Auction</a></li>
+        </ul>
+      </div>
+      <div class="items-manage">
+        <div class="add-new-item-bg">
+          <div class="wrapper-add-new">
+            <div id="addNew">
+              <h3>+ Add new item</h3>
+            </div>
+          </div>
+        </div>
+        <div class="cards-wrapper">
+          <div id="cards" style="display: flex; flex-direction: column"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/artist-item-page.js" type="module"></script>
+  </body>
+</html>

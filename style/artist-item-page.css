@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400;1,500&family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;1,400;1,500&family=Ubuntu+Mono&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcebd5;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.main-content {
+  width: 414px;
+  padding-bottom: 79px;
+}
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  height: 69px;
+  position: relative;
+}
+.logo-and-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-and-header a img {
+  width: 104px;
+  height: 104px;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+}
+.logo-and-header h1 {
+  font-family: Reenie Beanie;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #a16a5e;
+  position: absolute;
+  top: 16px;
+  left: 95px;
+}
+.header-section #menu-toggle {
+  cursor: pointer;
+}
+.li-menu {
+  background-color: #a16a5e;
+  display: none;
+  height: 191px;
+}
+.li-menu ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.li-menu ul li a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fcebd5;
+  cursor: pointer;
+}
+
+.items-manage {
+  min-width: 414px;
+  background-color: #edd5bb;
+  display: flex;
+  flex-direction: column;
+}
+.add-new-item-bg {
+  background-color: #edd5bb;
+}
+.wrapper-add-new {
+  margin: 11px 18px;
+}
+#addNew {
+  border: 2px dashed #a16a5e;
+  margin: 11px 18px;
+  background-color: #fcebd5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+#addNew h3 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #a16a5e;
+  padding: 50px 0;
+}
+.card-main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 300px;
+  width: 414px;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #edd5bb;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 414px;
+  height: 100px;
+}
+.modal-content button {
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 3px 15px;
+}
+.confirm {
+  background-color: #a16a5e;
+  color: rgb(252, 235, 213);
+}
+
+.close {
+  background-color: rgb(212, 76, 46);
+  color: rgb(252, 235, 213);
+}
+
+.card-main-info .left-side-img-card h3 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400px;
+  line-height: normal;
+  color: #a16a5e;
+}
+.card-main-info .left-side-img-card span {
+  font-family: Roboto;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400px;
+  line-height: normal;
+  color: #e09686;
+}
+.card-main-info .price {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #fcebd5;
+  background-color: #a16a5e;
+  padding: 3px 8px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+}
+p {
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400px;
+  line-height: normal;
+  color: #a16a5e;
+  padding-top: 12px;
+}
+button {
+  cursor: pointer;
+}

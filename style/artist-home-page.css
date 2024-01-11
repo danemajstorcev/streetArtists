@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400;1,500&family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;1,400;1,500&family=Ubuntu+Mono&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcebd5;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.main-content {
+  width: 414px;
+  position: relative;
+}
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  height: 69px;
+  position: relative;
+}
+.logo-and-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-and-header a img {
+  width: 104px;
+  height: 104px;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+}
+
+.logo-and-header h1 {
+  font-family: Reenie Beanie;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #a16a5e;
+  position: absolute;
+  top: 16px;
+  left: 95px;
+}
+#menu-toggle {
+  cursor: pointer;
+}
+.li-menu {
+  background-color: #a16a5e;
+  display: none; 
+  height: 191px;
+}
+.li-menu ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.li-menu ul li a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fcebd5;
+  cursor: pointer;
+}
+.items-and-income-and-bid-section {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 26px 18px 18px 18px;
+  background-color: #EDD5BB;
+}
+.items-and-income-and-bid-section .items-and-income {
+  display: flex;
+  justify-content: space-between;
+}
+.items-and-income-and-bid-section .items-and-income .items-sold,
+.items-and-income-and-bid-section .items-and-income .income {
+  width: 180px;
+  height: 120px;
+  background-color: #a16a5e;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 2px;
+}
+.items-and-income-and-bid-section .items-and-income .items-sold p,
+.items-and-income-and-bid-section .items-and-income .income p,
+.items-and-income-and-bid-section .bid-section .live-bid p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300px;
+  line-height: normal;
+  color: #fcebd5;
+}
+.items-and-income-and-bid-section .items-and-income .items-sold h1,
+.items-and-income-and-bid-section .items-and-income .income h1,
+.items-and-income-and-bid-section .bid-section .live-bid h1 {
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500px;
+  line-height: normal;
+  color: #fcebd5;
+}
+.items-and-income-and-bid-section .bid-section {
+  display: flex;
+  justify-content: space-around;
+}
+.items-and-income-and-bid-section .bid-section .live-bid {
+  height: 120px;
+  background-color: #d44c2e;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 2px;
+  flex-basis: 100%;
+  margin-top: 18px;
+}
+.income-display-container {
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.income-txt-and-buttons {
+  display: flex;
+  flex-direction: column;
+}
+.income-txt-and-buttons p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #a16a5e;
+}
+.income-txt-and-buttons .buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 9px;
+}
+.income-txt-and-buttons .buttons button {
+  display: flex;
+  width: 100px;
+  height: 27px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 2px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #fcebd5;
+  background-color: #a16a5e;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.charts-conainer {
+  padding-top: 123px;
+  padding-left: 18px;
+  padding-right: 18px;
+  margin-bottom: 54px;
+}

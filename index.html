@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project02</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div class="header">
+        <h1>Street ARTists</h1>
+      </div>
+      <div class="main-section">
+        <div class="logo"><img src="./img/Logo.png" alt="logo" /></div>
+        <div class="join-as">
+          <div class="trapezoid-container">
+            <div class="join-as-artist">
+              <div class="txt-and-dropdown">
+                <h1>Join as Artist</h1>
+                <select id="selectArtists">
+                  <option value="" disabled selected id="defaultChoose">
+                    Choose
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="join-as-visitor">
+              <a href="#visitor">
+                <div class="txt"><h1>Join as Visitor</h1></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

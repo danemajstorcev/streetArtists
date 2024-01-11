@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400;1,500&family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:ital,wght@0,100;0,300;1,400;1,500&family=Ubuntu+Mono&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcebd5;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+}
+#content {
+  width: 414px;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+.header h1 {
+  font-family: "Reenie Beanie", cursive;
+  color: #a16a5e;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  margin: 10px 0px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.join-as {
+  height: 600px;
+  padding-bottom: 183px;
+}
+.txt-and-dropdown {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 45px;
+  margin-left: 23px;
+  margin-right: 23px;
+}
+.txt-and-dropdown h1 {
+  font-family: "Reenie Beanie", cursive;
+  color: #a16a5e;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: right;
+}
+.txt-and-dropdown select {
+  align-self: flex-end;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #a16a5e;
+  background-color: transparent;
+  border-color: #a16a5e;
+}
+
+.join-as-artist {
+  position: absolute;
+  width: 260px;
+  height: 276.5px;
+  top: 321px;
+  left: 77px;
+  background-color: #edd5bb;
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 50%);
+  transition: transform 0.2s;
+}
+.join-as-artist:hover {
+  transform: scale(1.05);
+  z-index: 99;
+}
+#defaultChoose {
+  background: #edd5bb;
+}
+.join-as-visitor {
+  width: 260px;
+  height: 276.5px;
+  top: 437px;
+  left: 77px;
+  background-color: #a16a5e;
+  clip-path: polygon(0% 0, 100% 50%, 100% 100%, 0 100%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+}
+.join-as-visitor:hover {
+  transform: scale(1.05);
+  z-index: 99;
+}
+.join-as-visitor .txt h1 {
+  font-family: "Reenie Beanie", cursive;
+  color: #edd5bb;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: center;
+  margin-top: 105px;
+}
+.join-as-visitor a {
+  text-decoration: none;
+}

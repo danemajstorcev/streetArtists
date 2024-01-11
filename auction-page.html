@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/auction-page.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="header-section">
+        <div class="logo-and-header">
+          <a href="./index.html"><img src="./img/Logo.png" alt="logo" /></a>
+          <h1>Street ARTists</h1>
+        </div>
+        <a id="auction-link"><img src="./img/auction.png" alt="" /></a>
+      </div>
+      <section id="visitorAuctionPage" class="page-section">
+        <h3>Please, place your bid...</h3>
+        <div class="content">
+          <img src="" alt="" />
+          <h4></h4>
+          <h2></h2>
+        </div>
+        <div class="bidding">
+          <div>Highest Bid: <span id="highestBid"></span></div>
+          <div class="results-wrapper">
+            <div class="input-and-button-wrapper">
+              <input type="number" step="10" id="biddingInput" />
+              <button id="biddingBtn">bid!</button>
+            </div>
+            <table id="biddingHistory"></table>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./js/auction-page.js" type="module"></script>
+  </body>
+</html>

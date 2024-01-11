@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project02</title>
+    <link rel="stylesheet" href="./style/visitor-listings.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="header-section">
+        <div class="logo-and-header">
+          <a href="./index.html"><img src="./img/Logo.png" alt="logo" /></a>
+          <h1>Street ARTists</h1>
+        </div>
+        <a id="auction-link"><img src="./img/auction.png" alt="" /></a>
+      </div>
+      <div class="card-section" id="cardSection"></div>
+      <div class="filter-button">
+        <img src="./img/openFilterButton.png" />
+      </div>
+      <div class="filters">
+        <div class="contents-container">
+          <div class="filter-by-section">
+            <h2>Filter by</h2>
+            <img src="./img/CloseButton.png" id="closeButton" />
+          </div>
+          <div class="by-item-title">
+            <h3>By item title</h3>
+            <input type="text" placeholder="" id="itemTitle" />
+            <hr />
+          </div>
+          <div class="by-artist">
+            <h3>By artist</h3>
+            <select id="selectArtist">
+              <option value="">Choose <i class="fas fa-caret-down"></i></option>
+            </select>
+            <hr />
+          </div>
+          <div class="by-price">
+            <h3>By price</h3>
+            <div class="min-and-max">
+              <div class="min">
+                <label for="min">Min:</label>
+                <input type="number" id="minPrice" />
+              </div>
+              <div class="max">
+                <label for="max">Max:</label>
+                <input type="number" id="maxPrice" />
+              </div>
+            </div>
+            <hr />
+          </div>
+          <div class="by-type">
+            <h3>By type</h3>
+            <select id="selectItemTypes">
+              <option value="">Choose <i class="fas fa-caret-down"></i></option>
+            </select>
+            <hr />
+          </div>
+          <div class="checked">
+            <div class="checked-btn">
+              <img src="./img/checked.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/visitor-listings.js" type="module"></script>
+  </body>
+</html>

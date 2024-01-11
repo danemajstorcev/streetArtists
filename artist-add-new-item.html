@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/artist-add-new-item.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="header-section">
+        <div class="logo-and-header">
+          <a href="./index.html"><img src="./img/Logo.png" alt="logo" /></a>
+          <h1 id="artist-name"></h1>
+        </div>
+        <div id="menu-toggle"><img src="./img/hamburger.png" alt="" /></div>
+      </div>
+      <div class="li-menu">
+        <ul>
+          <li><a id="home">Home</a></li>
+          <li><a id="items">Items</a></li>
+          <li><a id="auction">Auction</a></li>
+        </ul>
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <section id="artistSnapshotPage" class="page-section">
+            <div></div>
+            <video id="liveStream" autoplay></video>
+            <button id="captureImageButton">
+              <img src="./img/fa-solid_camera.png" alt="" />
+            </button>
+            <canvas id="captureStream"></canvas>
+          </section>
+        </div>
+      </div>
+      <form action="" submit="">
+        <div class="form-content-wrapper">
+          <div class="adding-new-item">
+            <h1 id="add-or-edit-item-text"></h1>
+            <div class="checkbox">
+              <label for="checkbox">Is published</label>
+              <input type="checkbox" id="checkbox" />
+            </div>
+          </div>
+          <div class="title">
+            <label for="">Title</label>
+            <input type="text" id="title" />
+          </div>
+          <div class="description">
+            <label for="">Description</label>
+            <textarea name="" id="description"></textarea>
+          </div>
+          <div class="type-and-price">
+            <div class="type">
+              <label for="type">Type</label>
+              <select name="" id="type">
+                <option value="" disabled selected></option>
+              </select>
+            </div>
+            <div class="price">
+              <label for="price">Price</label>
+              <input type="number" id="price" />
+            </div>
+          </div>
+          <div class="image">
+            <label for="imageUrl">Image URL</label>
+            <input type="text" id="imageUrl" />
+          </div>
+          <p class="or">or</p>
+          <a id="snapshot-btn">
+            <img id="capturedImage" />
+            <div class="snapshot">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="67"
+                  height="67"
+                  viewBox="0 0 67 67"
+                  fill="none"
+                >
+                  <path
+                    d="M67 18.8438V56.5312C67 59.999 64.1865 62.8125 60.7188 62.8125H6.28125C2.81348 62.8125 0 59.999 0 56.5312V18.8438C0 15.376 2.81348 12.5625 6.28125 12.5625H17.7969L19.4064 8.25723C20.3225 5.81016 22.6648 4.1875 25.282 4.1875H41.7049C44.3221 4.1875 46.6645 5.81016 47.5805 8.25723L49.2031 12.5625H60.7188C64.1865 12.5625 67 15.376 67 18.8438ZM49.2031 37.6875C49.2031 29.0246 42.1629 21.9844 33.5 21.9844C24.8371 21.9844 17.7969 29.0246 17.7969 37.6875C17.7969 46.3504 24.8371 53.3906 33.5 53.3906C42.1629 53.3906 49.2031 46.3504 49.2031 37.6875ZM45.0156 37.6875C45.0156 44.0342 39.8467 49.2031 33.5 49.2031C27.1533 49.2031 21.9844 44.0342 21.9844 37.6875C21.9844 31.3408 27.1533 26.1719 33.5 26.1719C39.8467 26.1719 45.0156 31.3408 45.0156 37.6875Z"
+                    fill="#EDD5BB"
+                  />
+                </svg>
+              </div>
+              <p>Take a snapshot</p>
+            </div></a
+          >
+          <div class="buttons">
+            <button class="add" id="addOrEdit"></button>
+            <button class="cancel" id="cancelButton">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./js/artist-add-new-item.js" type="module"></script>
+  </body>
+</html>

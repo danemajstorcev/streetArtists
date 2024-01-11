@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/artist-home-page.css" />
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="header-section">
+        <div class="logo-and-header">
+          <a href="./index.html"><img src="./img/Logo.png" alt="logo" /></a>
+          <h1 id="artist-name"></h1>
+        </div>
+        <div id="menu-toggle"><img src="./img/hamburger.png" alt="" /></div>
+      </div>
+      <div class="li-menu">
+        <ul>
+          <li><a id="home">Home</a></li>
+          <li><a id="items">Items</a></li>
+          <li><a id="auction">Auction</a></li>
+        </ul>
+      </div>
+      <div class="items-and-income-and-bid-section">
+        <div class="items-and-income">
+          <div class="items-sold">
+            <p>Total Items Sold</p>
+            <h1 id="totalItemsSold"></h1>
+          </div>
+          <div class="income">
+            <p>Total Income</p>
+            <h1 id="totalIncome"></h1>
+          </div>
+        </div>
+        <div class="bid-section">
+          <div class="live-bid">
+            <p>Live Auctoning Item</p>
+            <h1 class="current-bid"></h1>
+            <p>current bid</p>
+          </div>
+        </div>
+      </div>
+      <div class="income-display-container">
+        <div class="income-txt-and-buttons">
+          <p>Display my income for last</p>
+          <div class="buttons">
+            <button id="seven-days">7 days</button>
+            <button id="fourteen-days">14 days</button>
+            <button id="thirty-days">30 days</button>
+          </div>
+        </div>
+      </div>
+      <div class="charts-conainer">
+        <canvas id="sold-items-chart"></canvas>
+      </div>
+    </div>
+    <script src="./js/artist-home-page.js" type="module"></script>
+  </body>
+</html>
