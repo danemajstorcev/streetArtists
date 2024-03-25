@@ -1,4 +1,4 @@
-                Street Artists UI JavaScript Project
+                Street Artists Mobile UI JavaScript Project
 
 Project Overview:
 This project is about creating web space for every street artist that will allow them to be able to track their
